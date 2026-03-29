@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: project-setup - all
+    filters:
+      and:
+        - file.hasTag("project-setup")
+    order:
+      - file.name
+      - tags
+      - date_created
+      - date_modified
+    sort:
+      - property: file.name
+        direction: ASC

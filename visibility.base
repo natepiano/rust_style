@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: visibility - all
+    filters:
+      and:
+        - file.hasTag("visibility")
+    order:
+      - file.name
+      - tags
+      - date_created
+      - date_modified
+    sort:
+      - property: file.name
+        direction: ASC

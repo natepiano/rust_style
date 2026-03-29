@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: imports - all
+    filters:
+      and:
+        - file.hasTag("imports")
+    order:
+      - file.name
+      - tags
+      - date_created
+      - date_modified
+    sort:
+      - property: file.name
+        direction: ASC
